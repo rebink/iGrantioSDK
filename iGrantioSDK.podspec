@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iGrantioSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'iGrant.io mobile SDK that can be incorporated to any third party app for android and iOS.
   
 '
@@ -25,18 +25,29 @@ s.description      = 'This contains all iGrant.io mobile SDK that can be incorpo
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'iGrant.io'
-  s.source           = { :git => 'https://github.com/rebink/iGrantioSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/rebink/iGrantFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'iGrantioSDK/Classes/**/*'
+  
+  s.ios.deployment_target = '10.0'
+  
+  s.source_files = 'iGrantFramework/Classes/**/*'
   s.swift_version = '4.2'
-  # s.resource_bundles = {
-  #   'iGrantioSDK' => ['iGrantioSDK/Assets/*.png']
-  # }
-
+  s.resource_bundles = {
+      #'iGrantFramework' => ['iGrantFramework/Assets/**/*.png'],
+      'PopView' => ['iGrantFramework/Classes/iGrantFiles/Organisation/PopOverView.xib'],
+      'iGrant' => ['iGrantFramework/Classes/iGrantFiles/iGrant.storyboard']
+  }
+  #  s.resources = 'iGrantFramework/Classes/iGrantFiles/iGrantAssets.xcassets/checked.imageset/checked@2x.png'
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit' , 'SafariServices'
+  s.dependency 'Alamofire'
+  s.dependency 'SwiftyJSON'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'SkyFloatingLabelTextField', '~> 3.0'
+  s.dependency 'IQKeyboardManagerSwift'
+  s.dependency "ExpandableLabel"
+  s.dependency "Popover"
+  s.dependency 'Toast-Swift'
+  
 end
