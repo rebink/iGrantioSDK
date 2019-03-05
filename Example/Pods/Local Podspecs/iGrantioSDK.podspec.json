@@ -1,0 +1,22 @@
+{
+  "name": "iGrantioSDK",
+  "version": "0.1.0",
+  "summary": "A short description of iGrantioSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rebinkpmna@gmail.com/iGrantioSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rebinkpmna@gmail.com": "rebin@bluecast.ae"
+  },
+  "source": {
+    "git": "https://github.com/rebinkpmna@gmail.com/iGrantioSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iGrantioSDK/Classes/**/*"
+}

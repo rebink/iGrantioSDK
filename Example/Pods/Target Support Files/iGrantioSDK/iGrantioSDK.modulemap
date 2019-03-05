@@ -1,0 +1,6 @@
+framework module iGrantioSDK {
+  umbrella header "iGrantioSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

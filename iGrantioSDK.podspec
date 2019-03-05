@@ -9,7 +9,9 @@
 Pod::Spec.new do |s|
   s.name             = 'iGrantioSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of iGrantioSDK.'
+  s.summary          = 'iGrant.io mobile SDK that can be incorporated to any third party app for android and iOS.
+  
+'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,21 +19,19 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = 'This contains all iGrant.io mobile SDK that can be incorporated to any third party app for android and iOS. See readme file for more info.'
 
-  s.homepage         = 'https://github.com/rebinkpmna@gmail.com/iGrantioSDK'
+  s.homepage         = 'https://github.com/rebink/iGrantioSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'rebinkpmna@gmail.com' => 'rebin@bluecast.ae' }
-  s.source           = { :git => 'https://github.com/rebinkpmna@gmail.com/iGrantioSDK.git', :tag => s.version.to_s }
+  s.author           = 'iGrant.io'
+  s.source           = { :git => 'https://github.com/rebink/iGrantioSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'iGrantioSDK/Classes/**/*'
-  
+  s.swift_version = '4.2'
   # s.resource_bundles = {
   #   'iGrantioSDK' => ['iGrantioSDK/Assets/*.png']
   # }
