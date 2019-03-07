@@ -9,9 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'iGrantioSDK'
   s.version          = '0.1.0'
-  s.summary          = 'iGrant.io mobile SDK that can be incorporated to any third party app for android and iOS.
-  
-'
+  s.summary          = 'will add'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -19,24 +17,34 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-s.description      = 'This contains all iGrant.io mobile SDK that can be incorporated to any third party app for android and iOS. See readme file for more info.'
+  s.description      = "Will be adding soon...................................."
 
-  s.homepage         = 'https://github.com/rebink/iGrantioSDK'
+  s.homepage         = 'https://github.com/L3-iGrant/mobileSDK-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'iGrant.io'
-  s.source           = { :git => 'https://github.com/rebink/iGrantioSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/L3-iGrant/mobileSDK-iOS.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '10.0'
 
-  s.source_files = 'iGrantioSDK/Classes/**/*'
-  s.swift_version = '4.2'
-  # s.resource_bundles = {
-  #   'iGrantioSDK' => ['iGrantioSDK/Assets/*.png']
-  # }
+s.source_files = 'iGrantioSDK/Classes/**/*'
+s.swift_version = '4.2'
+s.resource_bundles = {
+#'iGrantFramework' => ['iGrantFramework/Assets/**/*.png'],
+'PopView' => ['iGrantioSDK/Classes/iGrantFiles/Organisation/PopOverView.xib'],
+'iGrant' => ['iGrantioSDK/Classes/iGrantFiles/iGrant.storyboard']
+}
+#  s.resources = 'iGrantioSDK/Classes/iGrantFiles/iGrantAssets.xcassets/checked.imageset/checked@2x.png'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# s.public_header_files = 'Pod/Classes/**/*.h'
+s.frameworks = 'UIKit' , 'SafariServices'
+s.dependency 'Alamofire'
+s.dependency 'SwiftyJSON'
+s.dependency 'MBProgressHUD'
+s.dependency 'SkyFloatingLabelTextField', '~> 3.0'
+s.dependency 'IQKeyboardManagerSwift'
+s.dependency "ExpandableLabel"
+s.dependency "Popover"
+s.dependency 'Toast-Swift'
+
 end
