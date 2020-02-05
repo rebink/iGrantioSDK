@@ -22,7 +22,7 @@ pod 'iGrantioSDK'
 
 ## Author
 
-rebinkpmna@gmail.com, rebin@bluecast.ae
+rebinkpmna@gmail.com
 
 ## License
 
